@@ -12,7 +12,7 @@ export default function About() {
                     </div>
                     <div className="row">
                         <div className="col-lg-4">
-                            <img src="assets/img/joan-profile-img.jpg" className="img-fluid" alt />
+                            <img src="assets/img/joan-profile-img.jpg" className="img-fluid" alt="profile"/>
                         </div>
                         <div className="col-lg-8 pt-4 pt-lg-0 content">
                             <h3>Crypto Expert &amp; Forex Manager.</h3>
