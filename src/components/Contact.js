@@ -1,18 +1,18 @@
 import React from 'react'
-import  emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-    
+
         emailjs.sendForm('service_6u1ppsf', 'template_kh9sg39', e.target, 'user_3Qmrr6MR0vYHh7GiRvOW9')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-      };
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     return (
         <>
@@ -44,13 +44,16 @@ export default function Contact() {
                             </div>
                         </div>
                         <div className="col-lg-8 mt-5 mt-lg-0">
-                            <form className="php-email-form" onSubmit={sendEmail}>
+                            <form  className="php-email-form"
+                                action="https://formsubmit.co/joandavies136@gmail.com"
+                                 method="POST">
+                                
                                 <div className="row">
                                     <div className="col-md-6 form-group">
                                         <input type="text" name="name" htmlFor="name" className="form-control" id="name" placeholder="Your Name" required />
                                     </div>
                                     <div className="col-md-6 form-group mt-3 mt-md-0">
-                                        <input type="email" className="form-control" name="user_email" htmlFor="email" id="email" placeholder="Your Email" required />
+                                        <input type="email" className="form-control" name="email" htmlFor="email" id="email" placeholder="Your Email" required />
                                     </div>
                                 </div>
                                 {/* <div className="form-group mt-3">
