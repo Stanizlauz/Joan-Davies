@@ -1,18 +1,7 @@
 import React from 'react'
-import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs.sendForm('service_6u1ppsf', 'template_kh9sg39', e.target, 'user_3Qmrr6MR0vYHh7GiRvOW9')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-    };
+    
 
     return (
         <>
