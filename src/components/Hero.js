@@ -7,7 +7,7 @@ export default function Hero() {
                 {/* ======= Hero Section ======= */}
                 <section id="hero" className="d-flex flex-column justify-content-center">
                     <div className="container" data-aos="zoom-in" data-aos-delay={100}>
-                        <h1>Miss, Joan Davies</h1>
+                        <h1>Miss, Joan Davies.T.</h1>
                         <p> Crypto and Forex Trader</p>
                         <div className="social-links">
                             {/* <a href="#" className="twitter"><i className="bx bxl-twitter" /></a>
